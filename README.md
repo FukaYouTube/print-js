@@ -37,7 +37,7 @@ Logger.Logger() // saved to path: (/Users/user/Projects/log.json)
 Print.js - console
 ```javascript
 // Use Print() to output text with colot.
-const Print = require('../')
+const Print = require('print-js')
 const print = new Print.Print()
 
 print.log('Cool color huh?')
@@ -64,7 +64,7 @@ print.error('Code error again, probably I forgot ";"')
 print.custom('Custom theme :)', 'cyan')
 // Output: [Test::log] Custom theme :) (color: cyan)
 ```
-![alt-текст](/md-img/console.png "Console colors")
+![images](/md-img/console.png "Console colors")
 
 Spinner.js - loading to console
 ```javascript
@@ -72,9 +72,16 @@ Spinner.js - loading to console
 const Spinner = require('../')
 const spinner = new Spinner.Spin()
 
-spinner.spin('dots', 'Loading..')
+spinner.spin('dots', 'Loading..') // type loader, text
 
 setTimeout(() => {
     spinner.stop()
 }, 2000)
 ```
+## Type loader:
+dots, dots2, dots3, dots4, dots5, dots6, dots7, dots8, dots9, dots10, dots11,  
+line, simpleDots, simpleDotsScrolling, boxBounce, boxBounce2, triangle,  
+circle, squareCorners, circleQuarters, toggle, toggle1, toggle2, toggle3,  
+toggle4, toggle5, toggle6, arrow, bouncingBar, bouncingBall, pong, christmas, layer
+
+![images](/md-img/loader.png "Loading type")
