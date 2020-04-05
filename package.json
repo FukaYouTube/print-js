@@ -1,0 +1,20 @@
+{
+  "name": "print-js",
+  "version": "0.0.1",
+  "description": "manipulation console log",
+  "main": "index.js",
+  "scripts": {
+    "start": "node test/test",
+    "developer": "nodemon index"
+  },
+  "keywords": [
+    "console",
+    "color",
+    "print"
+  ],
+  "author": "Fuka",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.12"
+  }
+}
